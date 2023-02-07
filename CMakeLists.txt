@@ -10,3 +10,5 @@ install(DIRECTORY meshes launch urdf
 install(PROGRAMS scripts/env_run
   DESTINATION share/${PROJECT_NAME}
 )
+
+ament_package()

@@ -327,8 +327,8 @@
 
   <link name="rslidar32" />
   <joint name="rslidar32_joint" type="fixed">
-    <origin xyz="0.02632 0.1029 0.04536" rpy="0 0 0" />
-    <parent link="imu" />
+    <origin xyz="0.45734 -0.0156 0.76636" rpy="0 0 0" />
+    <parent link="base_link" />
     <child link="rslidar32" />
   </joint>
 

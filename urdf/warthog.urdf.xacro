@@ -327,7 +327,7 @@
 
   <link name="rslidar32" />
   <joint name="rslidar32_joint" type="fixed">
-    <origin xyz="0.45734 -0.0156 0.76636" rpy="0 0 0" />
+    <origin xyz="0.45734 -0.0156 0.76636" rpy="0 028267838 0" /> <!-- pitch from 01/02/2023 FM calib data-->
     <parent link="base_link" />
     <child link="rslidar32" />
   </joint>

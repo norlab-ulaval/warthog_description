@@ -318,17 +318,17 @@
     <child link="imu_link" />
   </joint>
 
-  <link name="mti10" />
+  <link name="imu" />
   <joint name="mti10_joint" type="fixed">
     <origin xyz="0.43102 -0.1185 0.721" rpy="0 0 0" />
     <parent link="base_link" />
-    <child link="mti10" />
+    <child link="imu" />
   </joint>
 
   <link name="rslidar32" />
   <joint name="rslidar32_joint" type="fixed">
     <origin xyz="0.02632 0.1029 0.04536" rpy="0 0 0" />
-    <parent link="mti10" />
+    <parent link="imu" />
     <child link="rslidar32" />
   </joint>
 

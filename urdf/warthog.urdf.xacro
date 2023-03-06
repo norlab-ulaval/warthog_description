@@ -318,11 +318,11 @@
     <child link="imu_link" />
   </joint>
 
-  <link name="imu" />
+  <link name="mti10" />
   <joint name="mti10_joint" type="fixed">
     <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.028267838 0" /> <!-- pitch from 01/02/2023 FM calib data-->
     <parent link="base_link" />
-    <child link="imu" />
+    <child link="mti10" />
   </joint>
 
   <link name="rslidar32" />

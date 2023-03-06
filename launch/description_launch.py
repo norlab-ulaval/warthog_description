@@ -15,7 +15,8 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             name='robot_state_publisher',
-            parameters=[{"robot_description": ParameterValue(Command(["xacro ",xacro_path]), value_type=str)
+            parameters=[{"robot_description": ParameterValue(Command(["xacro ",xacro_path]), value_type=str),
+                         "use_sim_time": True,
                         #  "dof": params["dof"],
                         #  "vision": params["vision"],
                         #  "sim": params["sim"]

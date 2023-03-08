@@ -320,8 +320,8 @@
 
   <link name="mti10" />
   <joint name="mti10_joint" type="fixed">
-    <!-- <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.028267838 0" /> -->
-    <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.034338479 0" /> <!-- Calibration done on march 16th loop around vachon rosbag: rosbag2_2023_03_16-13_26_17 -->
+    <!-- <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.028267838 0" /> --> <!-- Calibration on February 1th 2023 in FM-->
+    <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.034338479 0" /> <!-- Calibration done on March 16th loop around vachon rosbag: rosbag2_2023_03_16-13_26_17 -->
     <parent link="base_link" />
     <child link="mti10" />
   </joint>

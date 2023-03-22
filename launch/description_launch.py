@@ -10,6 +10,10 @@ def generate_launch_description():
     package = get_package_share_directory("warthog_description")
     xacro_path = os.path.join(package, "urdf/warthog.urdf.xacro")
 
+    is_warthog = os.environ.get("IS_WARTHOG", None)
+    remappings = []
+    if is_warthog == '1':
+        remappings=[('tf_static', 'dummy_tf_static'), ('tf', 'dummy_tf')]
     return LaunchDescription([
         Node(
             package='robot_state_publisher',
@@ -20,6 +24,7 @@ def generate_launch_description():
                         #  "dof": params["dof"],
                         #  "vision": params["vision"],
                         #  "sim": params["sim"]
-                         }]
+                         }],
+            remappings=remappings
         ),
     ])

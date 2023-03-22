@@ -244,6 +244,13 @@
     <child link="chassis_link" />
   </joint>
 
+  <link name="footprint_link"></link>
+  <joint name="footprint_joint" type="fixed">
+    <origin xyz="0 0 -${wheel_radius}" rpy="0 0 0" />
+    <parent link="base_link"/>
+    <child link="footprint_link" />
+  </joint>
+
   <link name="chassis_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>

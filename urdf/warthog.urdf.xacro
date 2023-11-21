@@ -339,7 +339,14 @@
     <parent link="base_link" />
     <child link="rslidar32" />
   </joint>
-
+   
+  <link name="radar" />
+  <joint name="radar_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="radar" />
+  </joint>
+  
   <link name="rslidar16_left" />
   <joint name="rslidar16_left_joint" type="fixed">
     <origin xyz="-0.48272 0.24473 0.74131" rpy="${-PI/6} 0 ${PI/4}" />

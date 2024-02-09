@@ -339,7 +339,21 @@
     <parent link="base_link" />
     <child link="rslidar32" />
   </joint>
-   
+
+  <link name="dps310_1" />
+  <joint name="dps310_1_joint" type="fixed">
+    <origin xyz="-0.561975 0.301228 -0.25686" rpy="0 0 0" />
+    <parent link="rslidar32" />
+    <child link="dps310_1" />
+  </joint>
+
+  <link name="dps310_2" />
+  <joint name="dps310_2_joint" type="fixed">
+    <origin xyz="-0.244475 0.301228 -0.19986" rpy="0 0 0" />
+    <parent link="rslidar32" />
+    <child link="dps310_2" />
+  </joint>
+
   <link name="radar" />
   <joint name="radar_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />

@@ -327,8 +327,8 @@
 
   <link name="mti10" />
   <joint name="mti10_joint" type="fixed">
-    <!-- <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.028267838 0" /> --> <!-- Calibration on February 1th 2023 in FM-->
-    <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.034338479 0" /> <!-- Calibration done on March 16th loop around vachon rosbag: rosbag2_2023_03_16-13_26_17 -->
+    <!--  <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.034338479 0" /> Calibration done on March 16th loop around vachon rosbag: rosbag2_2023_03_16-13_26_17 -->
+    <origin xyz="0.43102 -0.1185 0.721" rpy="0 0.001 0" /> <!-- Calibration done on the warthog_first_experiment_mobile_lab_to_main_building_clipped rosbag -->
     <parent link="base_link" />
     <child link="mti10" />
   </joint>
@@ -367,7 +367,7 @@
     <parent link="base_link" />
     <child link="basler_camera" />
   </joint>
-  
+
   <link name="rslidar16_left" />
   <joint name="rslidar16_left_joint" type="fixed">
     <origin xyz="-0.48272 0.24473 0.74131" rpy="${-PI/6} 0 ${PI/4}" />
